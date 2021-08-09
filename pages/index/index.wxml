@@ -1,0 +1,19 @@
+<!-- index.wxml -->
+<view class="container">
+  <search-bar bind:toSearch="toSearch" class="s-b"></search-bar>
+  <view class="swiper-container">
+    <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}">
+      <view wx:for="{{banners}}" wx:key="{{item.id}}">
+        <swiper-item class="swiper-item">
+          <image class="swiper-image" src="{{item.image_url}}" />
+        </swiper-item>
+      </view>
+    </swiper>
+  </view>
+  <view class="categories">
+    <view class="categories-item" wx:for="{{channels}}" wx:for-item="channel">
+      <image  class="category-img" src="{{channel.icon_url}}" alt="" />
+      <label class="category-label">{{channel.name}}</label>
+    </view>
+  </view>
+</view>

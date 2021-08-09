@@ -1,0 +1,7 @@
+<view class="search-bar-container">
+  <view class="search-label" for="">苏州</view>
+  <view class="search-input-container" bindtap="toSearch">
+    <input class="search-input" type="text" />
+    <span class="search-icon"></span>
+  </view>
+</view>
