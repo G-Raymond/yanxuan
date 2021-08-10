@@ -1,0 +1,33 @@
+.user-header {
+  height: 500rpx;
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.colum {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #f0f0f0;
+  border-left: 1px solid #f0f0f0;
+  
+}
+
+.item {
+  box-sizing: border-box;
+  width: 33.333333%;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  border-bottom: solid #f0f0f0 1rpx;
+  border-right: solid #f0f0f0 1rpx;
+}

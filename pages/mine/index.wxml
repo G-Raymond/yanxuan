@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="user-header">
+    <image class="icon" />
+    <view class="user-info">
+      <p>user name</p>
+      <p>微信用户</p>
+    </view>
+  </view>
+  <view class="colum">
+    <view class="item" wx:for="{{options}}">{{item.name}}</view>
+    
+
+  </view>
+</view>
