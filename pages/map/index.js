@@ -22,10 +22,15 @@ Page({
       success: function (data) {
         if (data[0]) {
           var _yourCity = data[0].regeocodeData.addressComponent.province;
-          that.setData({
-            yourCity: _yourCity
-          });
-          console.log(data[0].regeocodeData.addressComponent, "-----------");
+          wx.setStorage({
+            key:"province",
+            data:_yourCity
+          })
+          
+          // that.setData({
+          //   yourCity: _yourCity
+          // });
+          // console.log(data[0].regeocodeData.addressComponent, "-----------");
         }
       },
       fail(err) {
@@ -45,7 +50,7 @@ Page({
       location: '纬度,经度 ',
       success(data) {
         var markersData = data.markers;
-        debugger
+
         that.setData({
           markers: markersData,
           markPointIndex: 0,
