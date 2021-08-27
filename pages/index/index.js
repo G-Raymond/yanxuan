@@ -35,6 +35,11 @@ Page({
   // 去搜索
   toSearch(value) {
     console.log('this is index to search', value)
+    wx.scanCode({
+      success(res) {
+        console.log(res)
+      }
+    })
   },
 
   onLoad() {
