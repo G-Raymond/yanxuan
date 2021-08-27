@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/mine/index"
+    "pages/mine/index",
+    "pages/map/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,16 +15,18 @@
     "search-bar": "./pages/index/component/searchBar/searchBar"
   },
   "tabBar": {
-
     "color": "balck",
     "selectedColor": "#f00",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/mine/index",
-      "text": "我的"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",

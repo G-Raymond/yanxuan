@@ -21,7 +21,13 @@ Component({
   methods: {
     toSearch() {
       console.log("to search")
-      this.triggerEvent('toSearch',1)
+      this.triggerEvent('toSearch', 1)
+    },
+    toMap() {
+      console.log(1111)
+      wx.navigateTo({
+        url: '/pages/map/index',
+      })
     }
 
   }
